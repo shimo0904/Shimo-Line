@@ -28,7 +28,7 @@
 
 .header {
   height: 100vh;
-  width: 60px;
+  width: 56px;
   background-color: #9999cc;
   float: left;
 }
@@ -63,10 +63,60 @@
   }
 }
 
-.blank {
-  height: 20px;
-  width: 100%;
-  background-color: blue;
+
+.left-content {
+  height: 100vh;
+  width: 270px;
+  background-color: red;
   float: left;
+
+
+  .blank {
+    height: 20px;
+    width: 100%;
+    background-color: #F5F5F5;
+  }
+
+  .searches {
+    height: 40px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid;
+    border-color: #DDDDDD;
+  }
+
 }
 
+.right-content {
+  height: 100vh;
+  width: calc(100vw - 326px);
+  background-color: green;
+  float: left;
+
+  .blank {
+    height: 20px;
+    width: 100%;
+    background-color: #F5F5F5;
+  }
+
+  .talk-informations {
+    height: 40px;
+    width: 100%;
+    background-color: #F5F5F5;
+    border: 1px solid;
+    border-color: #DDDDDD;
+    border-left-style: none; 
+  }
+
+  .messages {
+    height: calc(100% - 180px);
+    width: 100%;
+    background-color: blue;
+  }
+
+  .posts {
+    height: 120px;
+    width: 100%;
+    background-color: yellow;
+  }
+}

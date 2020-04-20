@@ -1,3 +1,72 @@
 * {
   box-sizing: border-box;
 }
+
+// html {
+//   height: 100%;
+//   width: 100%;
+// }
+
+
+// body {
+//   height: 100%;
+//   width: 100%;
+
+// }
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6,
+// p,
+// body {
+//   margin: 0;
+//   padding: 0;
+// }
+
+.header {
+  height: 100vh;
+  width: 60px;
+  background-color: #9999cc;
+  float: left;
+}
+
+.icons {
+  height: 100%;
+  padding: 0px 20px 0px;
+  position: relative;
+
+  &__icon--up {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .fas.fa-user {
+    margin-top: 35px;
+  }
+
+  &__icon--downs {
+    margin-top: 100px;
+    font-size: 18px;
+    position: absolute;
+	  bottom: 0;
+  }
+
+  &__icon--down {
+    margin-bottom: 20px;
+  }
+
+  .far.fa-bookmark {
+    margin-left: 1px;
+  }
+}
+
+.blank {
+  height: 20px;
+  width: 100%;
+  background-color: blue;
+  float: left;
+}
+

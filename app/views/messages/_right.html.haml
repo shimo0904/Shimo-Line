@@ -1,1 +1,47 @@
-<右>
+.right-content
+  .blank
+  .informations
+    .informations__icons
+      .informations__icon--right
+        = link_to "#" do
+          %i.fas.fa-lock
+        = link_to "#" do
+          こう子
+        = link_to "#" do
+          %i.fas.fa-volume-down
+      .informations__icon--left
+        = link_to "#" do
+          %i.fas.fa-search
+        = link_to "#" do
+          %i.far.fa-clone
+        = link_to "#" do
+          %i.far.fa-file-alt
+        = link_to "#" do
+          %i.fas.fa-ellipsis-h
+
+  .messages
+
+  .posts
+    .blank
+    .posts__icons
+      .posts__icon--left
+        = link_to "#" do
+          %i.far.fa-smile
+        = link_to "#" do
+          %i.far.fa-bookmark
+        = link_to "#" do
+          %i.far.fa-square
+      .posts__icon--left--s
+        = link_to "#" do
+          %i.fas.fa-caret-down
+      .posts__icon--right
+        = link_to "#" do
+          %i.fas.fa-phone-alt
+        = link_to "#" do
+          %i.fas.fa-video.fa-flip-horizontal
+    .posts__input
+      = form_for "#" do |f|
+        = f.text_field :text, class: 'post__text'
+        = f.label :image, class: 'post__image' do
+          = icon('fas','paperclip')
+          = f.file_field :image, class: 'post__file'

@@ -1,1 +1,57 @@
-<左>
+.left-content
+  .blank
+  .searches
+    .searches__search-icon
+      %i.fas.fa-search
+    .searches__searche-text
+      = form_tag "#" do
+        = text_field_tag :text, '', class: 'searche-area', placeholder: 'トークルームとメッセージ検索'
+    .searches__search-menus
+      = link_to "#" do
+        %i.fas.fa-bars
+      = link_to "#" do
+        %i.fas.fa-caret-down
+      = link_to "#" do
+        %i.fas.fa-angle-left
+
+  
+  .groups
+    .groups__choose
+      %i.fas.fa-plus
+    .group
+      .group__image
+        = image_tag "sample1.jpeg", size: "100x80", class: "image"
+      .group__name
+        下川原 康太
+        .group__name--number
+      .group__text
+        お腹が減りました。
+        何か食べたい
+      .group__date
+        午後 2:59
+        .group__date--number
+          2
+    .group
+      .group__image
+        = image_tag "sample2.jpeg",size: "100x80", class: "image"
+      .group__name
+        テニス部
+        .group__name--number
+          (12)
+      .group__text
+        明日は何時集合ですか？
+      .group__date
+        午後 4:07
+        -# .group__date--number
+        
+    .group
+      .group__image
+        = image_tag "sample3.jpeg",size: "100x80", class: "image"
+      .group__name
+        こう子
+        .group__name--number
+      .group__text
+        明日、タピオカ飲みに行かない？？😋
+      .group__date
+        金曜日
+        -# .group__date--number

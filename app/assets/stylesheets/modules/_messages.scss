@@ -335,9 +335,21 @@
       .posts__icon--left {
         a {
           text-decoration: none;
-          margin-left: 14px;
           color: #98A2B1;
         }
+
+        .far.fa-smile {
+          margin-left: 12px;
+        }
+
+       .far.fa-bookmark {
+         margin-left: 52px;
+       }
+
+       .far.fa-square {
+         margin-left: 18px;
+       }
+
       }
 
       .fas.fa-caret-down {
@@ -366,6 +378,17 @@
         width: 100%;
         // height: 84px;
         border-style: none;
+      }
+
+      .post__image {
+        position: absolute;
+        left: 374px;
+        bottom: 88px;
+        color: #98A2B1;
+      }
+
+      .post__file {
+        display: none;
       }
     }
   }

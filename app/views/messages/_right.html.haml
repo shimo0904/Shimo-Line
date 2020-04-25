@@ -28,8 +28,6 @@
         = link_to "#" do
           %i.far.fa-smile
         = link_to "#" do
-          %i.fas.fa-paperclip
-        = link_to "#" do
           %i.far.fa-bookmark
         = link_to "#" do
           %i.far.fa-square
@@ -43,7 +41,7 @@
           %i.fas.fa-video.fa-flip-horizontal
     .posts__input
       = form_for "#" do |f|
-        = f.text_field :text, class: :post__text
-        
-
-        
+        = f.text_field :text, class: 'post__text'
+        = f.label :image, class: 'post__image' do
+          = icon('fas','paperclip')
+          = f.file_field :image, class: 'post__file'

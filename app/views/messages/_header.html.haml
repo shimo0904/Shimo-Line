@@ -3,7 +3,7 @@
     2
   .icons
     .icons__icon--up
-      = link_to "#" do
+      = link_to edit_user_registration_path, class: "header__right--btn" do
         %i.fas.fa-user
     .icons__icon--up
       = link_to "#" do
@@ -22,5 +22,5 @@
         = link_to "#" do
           %i.far.fa-bookmark
       .icons__icon--down
-        = link_to "#" do
+        = link_to destroy_user_session_path, method: :delete, class: "header__right--btn" do
           %i.fas.fa-ellipsis-h

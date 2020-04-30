@@ -1,5 +1,6 @@
 .left-content
   .blank
+    = current_user.name
   .searches
     .searches__search-icon
       %i.fas.fa-search
@@ -14,7 +15,6 @@
       = link_to "#" do
         %i.fas.fa-angle-left
 
-  
   .groups
     .groups__choose
       %i.fas.fa-plus
